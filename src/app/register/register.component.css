@@ -1,0 +1,20 @@
+.my-form{
+  min-width: 150px;
+  max-width: 800px;
+  width: 150%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 150%;
+  padding: 20px;
+}

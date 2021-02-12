@@ -1,0 +1,60 @@
+.example-spacer {
+  padding: 5px 10%;
+}
+
+.example-title {
+  padding: 5px 25%;
+}
+
+.sidenav {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+
+span {
+  padding: 5px 5px 5px 5px;
+}
+
+.example-container {
+  height: 80%;
+}
+
+mat-drawer {
+  width: 300px;
+  padding: 30px;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+:host ::ng-deep .mat-tab-labels {
+  flex-direction: column;
+}
+
+mat-tab-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-tab-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+:host ::ng-deep mat-ink-bar {
+  display: none;
+}

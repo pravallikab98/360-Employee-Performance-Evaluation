@@ -1,0 +1,28 @@
+
+<mat-toolbar color="accent">
+  <span><img src="https://talentinnovations.com/wp-content/uploads/2018/04/360-300x300.png" width="70px" height="70px"/></span>
+  <button mat-button routerLink="/login">
+    <span>Login</span>
+  </button>
+  <button mat-button routerLink="/register">
+    <span>Register</span>
+  </button>
+</mat-toolbar>
+<mat-card>
+  <mat-card-content>
+    <p *ngIf="invalidCredentials" style="color:red">Invalid user Credentials</p>
+    <form [formGroup]="userLoginForm" class="my-form">
+      <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input  matInput  placeholder="Email" name="email" formControlName="email" class="form-control is-invalid ">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input  matInput  placeholder="Password" type="password" formControlName="password" class="form-control is-invalid ">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
+  </mat-card-actions>
+</mat-card>

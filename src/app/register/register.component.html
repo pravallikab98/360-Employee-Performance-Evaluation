@@ -1,0 +1,44 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="accent">
+  <span><img src="https://talentinnovations.com/wp-content/uploads/2018/04/360-300x300.png" width="70px" height="70px"/></span>
+  <button mat-button routerLink="/login">
+    <span>Login</span>
+  </button>
+  <button mat-button routerLink="/register">
+    <span>Register</span>
+  </button>
+</mat-toolbar>
+<mat-toolbar>
+  <span>Registration Form</span>
+</mat-toolbar>
+<mat-card class="my-card">
+  <mat-card-content>
+    <form class="my-form" [formGroup]="userRegisterForm">
+      <!--FORM FIELDS HERE-->
+      <mat-form-field class="full-width">
+        <mat-label>First Name</mat-label>
+        <input  matInput  formControlName="firstName" class="form-control is-invalid" placeholder="First name"  name="fname"  required>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input  matInput  formControlName="lastName" class="form-control is-invalid" placeholder="Last Name" name="lname"  required>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input  matInput formControlName="email" class="form-control is-invalid" placeholder="Email" name="email">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input  matInput formControlName="password" class="form-control is-invalid" placeholder="Password"  type="password">
+      </mat-form-field>
+      <br>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <!--REGISTER BUTTON HERE-->
+    <button mat-raised-button (click)="register()" color="primary">REGISTER</button>
+  </mat-card-actions>
+</mat-card>
